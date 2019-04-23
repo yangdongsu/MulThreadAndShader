@@ -30,9 +30,9 @@ public class APKBuild : Editor
             levels.Add(scene.path);
         }
         // 打包出 APK 名        
-        string apkName = Application.dataPath + "/Package/TestPackage.apk";
+        string apkName = "E:/GitItem/Package/" + "TestPackage.apk";
         // 执行打包        
-        BuildPipeline.BuildPlayer(levels.ToArray(), apkName, BuildTarget.StandaloneWindows, BuildOptions.None);
+        BuildPipeline.BuildPlayer(levels.ToArray(), apkName, buildTarget, BuildOptions.None);
         AssetDatabase.Refresh();
     }
 }

@@ -1,9 +1,11 @@
-@echo off  
+@echo off
 
-echo 正在生成APK文件... 
+set UNITY_PATH="C:\Program Files\Unity\Hub\Editor\2018.3.9f1\Editor\Unity.exe"
+set UNITY_PROJECT_PATH="E:\GitItem\MulThreadAndShader\TransparentShader"
+set UNITY_LOG_PATH=%cd%\unity_log.txt
 
-REM %1 -projectPath %2 -quit -batchmode -executeMethod APKBuild.Build -logFile build.log
+echo 启动 Unity.exe 请稍后...
 
-echo APK文件生成完毕!  
+%1 -quit -batchmode -logFile %UNITY_LOG_PATH% -projectPath %2 -executeMethod APKBuild.Build
 
-pause 
+pause
