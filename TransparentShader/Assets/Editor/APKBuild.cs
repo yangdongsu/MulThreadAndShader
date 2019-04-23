@@ -10,14 +10,18 @@ public class APKBuild : Editor
         BuildTarget buildTarget = BuildTarget.Android;
         // 切换到 Android 平台        
         EditorUserBuildSettings.SwitchActiveBuildTarget(buildTarget);
-        // keystore 路径, G:\keystore\one.keystore        
-        PlayerSettings.Android.keystoreName = "G:\\keystore\\one.keystore";
-        // one.keystore 密码        
-        PlayerSettings.Android.keystorePass = "123456";
-        // one.keystore 别名        
-        PlayerSettings.Android.keyaliasName = "bieming1";
-        // 别名密码        
-        PlayerSettings.Android.keyaliasPass = "123456";
+
+
+        //// keystore 路径, G:\keystore\one.keystore        
+        //PlayerSettings.Android.keystoreName = "G:\\keystore\\one.keystore";
+        //// one.keystore 密码        
+        //PlayerSettings.Android.keystorePass = "123456";
+        //// one.keystore 别名        
+        //PlayerSettings.Android.keyaliasName = "bieming1";
+        //// 别名密码        
+        //PlayerSettings.Android.keyaliasPass = "123456";
+
+
         List<string> levels = new List<string>();
         foreach (EditorBuildSettingsScene scene in EditorBuildSettings.scenes)
         {
@@ -26,9 +30,9 @@ public class APKBuild : Editor
             levels.Add(scene.path);
         }
         // 打包出 APK 名        
-        string apkName = string.Format("./{0}.apk", "Test");
+        string apkName = Application.dataPath + "/Package/TestPackage.apk";
         // 执行打包        
-        UnityEditor.Build.Reporting.BuildReport br = BuildPipeline.BuildPlayer(levels.ToArray(), apkName, buildTarget, BuildOptions.None);
+        BuildPipeline.BuildPlayer(levels.ToArray(), apkName, BuildTarget.StandaloneWindows, BuildOptions.None);
         AssetDatabase.Refresh();
     }
 }
