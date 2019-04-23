@@ -8,4 +8,6 @@ echo ∆Ù∂Ø Unity.exe «Î…‘∫Û...
 
 %UNITY_PATH% -quit -batchmode -logFile %UNITY_LOG_PATH% -projectPath %UNITY_PROJECT_PATH% -executeMethod APKBuild.Build
 
+%1 -projectPath %2 -quit -batchmode  -logFile -executeMethod APKBuild.Build
+
 pause
