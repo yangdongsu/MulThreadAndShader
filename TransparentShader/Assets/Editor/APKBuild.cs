@@ -21,6 +21,7 @@ public class APKBuild : Editor
         //// 别名密码        
         //PlayerSettings.Android.keyaliasPass = "123456";
 
+        BuildPipeline.BuildAssetBundles(Application.streamingAssetsPath, BuildAssetBundleOptions.None, BuildTarget.Android);
 
         List<string> levels = new List<string>();
         foreach (EditorBuildSettingsScene scene in EditorBuildSettings.scenes)

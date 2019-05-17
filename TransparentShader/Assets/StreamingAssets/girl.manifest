@@ -1,0 +1,39 @@
+ManifestFileVersion: 0
+CRC: 1067838724
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1601d774d69d73c211f026b18c4d254f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 82019c0f56e9a1087d1853da28bb424b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+Assets:
+- Assets/Material/TSHair/girl.FBX
+- Assets/Material/TSHair/Hair.mat
+- Assets/Material/TSHair/default.png
+- Assets/Material/TSHair/diffuse.tga
+Dependencies: []

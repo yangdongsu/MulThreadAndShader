@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 3856705749
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: girl
+      Dependencies: {}
